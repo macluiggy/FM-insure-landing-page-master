@@ -251,11 +251,16 @@ header section figure img {
       }
 }
 
-/*MAIN SECTION*/
+/*-------------
+MAIN SECTION
+---------------*/
+/*main section 1*/
 main {
     position: relative;
     padding: 20em 0 2em 0;
     font-family: 'Karla', sans-serif;
+}
+.main-title {
 }
 main hr {
     width:10em;
@@ -267,7 +272,7 @@ main .main-section1 article {
     margin: auto;
 }
 .main-section1 h2 {
-    padding: 1.5em 0.5em;
+    padding: 1em 0.5em;
 }
 main .list-main-section1 {
     list-style-type: none;
@@ -277,4 +282,37 @@ main .list-main-section1 {
 }
 .we-are-different {
     font-size: 4em;
+}
+.list-main-section1 h3 {
+    padding: 1.5em 0 1em 0;
+    font-size: 1.5em;
+}
+.list-main-section1 h3 + p {
+    line-height: 1.5em;
+    font-size: 0.9em;
+    color: var(--Dark-Grayish-Violet);
+}
+/*main section 1 mobile*/
+@media screen and (max-width: 700px) {
+    main {
+        text-align: center;
+    }
+    main .list-main-section1 {
+        list-style-type: none;
+        display: grid;
+        grid-template-areas: 
+        'item1'
+        'item2'
+        'item3';
+        grid-gap: 2em;
+        position: relative;
+        right: 5%;
+    }
+    .main-title h2 {
+        font-size: 2.5em;
+    }
+    main hr {
+        left: 0;
+        border: solid;
+    }
 }
