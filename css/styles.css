@@ -317,9 +317,12 @@ main .list-main-section1 {
     }
 }
 /*main section 2*/
+.main-section2-container {
+    margin: 0 auto;
+    width: 80%;
+}
 .main-section2 {
     display: flex;
-    width: 75%;
     margin: 0 auto;
     font-size: 2em;
     padding: 2em;
@@ -330,7 +333,8 @@ main .list-main-section1 {
     color: white;
     background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right top;
+    background-size: 16em;
 }
 .main-section2 h2 {
     width: 44%;
@@ -345,6 +349,7 @@ main .list-main-section1 {
     padding: 0.5em 1.4em;
     outline: none;
     font-weight: bold;
+    margin-top: 2em;
 }
 /*main section 2 mobile*/
 @media screen and (max-width: 700px) {
@@ -355,8 +360,23 @@ main .list-main-section1 {
         background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
         padding: 2em 1em;
         background-position: right top;
+        background-size: 6em;
     }
     .main-section2 h2 {
         width: 100%;
     }
+    .main-section2-container {
+        margin: 0 auto;
+        width: 100%;
+        margin: 12em 0;
+    }
+}
+
+/*--------------
+FOOTER SECTION
+---------------*/
+footer {
+    border: solid;
+    position: absolute;
+    width: 100%;
 }
