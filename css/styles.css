@@ -34,6 +34,7 @@ nav {
     padding: 1em;
     position: fixed;
     background-color: white;
+    z-index: 4;
 }
 header img {
     display: block;
@@ -190,6 +191,10 @@ header section figure img {
         font-size: 1.5em;
         text-transform: uppercase;
         color: white;
+        background-image: url('../images/bg-pattern-mobile-nav.svg');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100%;
     }
     nav li {
         line-height: 4em;
@@ -219,13 +224,16 @@ header section figure img {
         width: 100%;
     }
     header figure {
-        grid-area: 1/1/ span 1 / span 1;
         width: 100%;
-        position: initial;
     }
     header section article {
-        grid-area: 2/1/ span 1/ span 1;
-        position: initial;
+        padding: 4em 2em 1em 2em;
+    }
+    header section article p {
+    }
+    header section article button {
+        font-size: 1.2em;
+        font-weight: bold;
     }
     hr {
         display: none;
@@ -236,12 +244,37 @@ header section figure img {
         top: 85%;
     }
     .left-pattern {
-        background-image: url('../images/bg-pattern-intro-left-mobile.svg');
-        background-position: left top;
-        top: 58.99%;
+        background-image: none;
     }
     .bar1, .bar2, .bar3 {
         background-color: black;
       }
 }
 
+/*MAIN SECTION*/
+main {
+    position: relative;
+    padding: 20em 0 2em 0;
+    font-family: 'Karla', sans-serif;
+}
+main hr {
+    width:10em;
+    position: relative;
+    left: 30px;
+}
+main .main-section1 article {
+    width: 80%;
+    margin: auto;
+}
+.main-section1 h2 {
+    padding: 1.5em 0.5em;
+}
+main .list-main-section1 {
+    list-style-type: none;
+    display: grid;
+    grid-template-areas: 'item1 item2 item3';
+    grid-gap: 2em;
+}
+.we-are-different {
+    font-size: 4em;
+}
