@@ -166,14 +166,43 @@ header section figure img {
  }
 @media screen and (max-width: 700px) {
     nav {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        padding: 0;
     }
     nav img {
+        padding: 2em 1em;
+        float: left;
+        width: 30%;
+        border: none;
+    }
+    nav #containerBurger {
+        float: right;
+        border: none;
+        padding: 1.5em 1em;
+    }
+    #itemlist {
+        display: none;
+        padding: 1em 0 9em 0;
+        clear: left;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--Very-Dark-Violet);
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: white;
+    }
+    nav li {
+        line-height: 4em;
         padding: 0;
     }
-    nav ul {
+    nav ul li.bordered {
+        color: white;
+        border: solid white 0.1em;
         padding: 0;
+        width: 75%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
     }
     header section figure img {
         content: url('../images/image-intro-mobile.jpg');
@@ -209,6 +238,7 @@ header section figure img {
     .left-pattern {
         background-image: url('../images/bg-pattern-intro-left-mobile.svg');
         background-position: left top;
+        top: 58.99%;
     }
     .bar1, .bar2, .bar3 {
         background-color: black;
