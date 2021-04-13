@@ -316,3 +316,47 @@ main .list-main-section1 {
         border: solid;
     }
 }
+/*main section 2*/
+.main-section2 {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 2em;
+    padding: 2em;
+    margin: 4em 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very-Dark-Violet);
+    color: white;
+    background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.main-section2 h2 {
+    width: 44%;
+}
+.main-section2 button {
+    height: fit-content;
+    font-size: 0.5em;
+    border: solid var(--Very-Light-Gray);
+    color: var(--Very-Light-Gray);
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 0.5em 1.4em;
+    outline: none;
+    font-weight: bold;
+}
+/*main section 2 mobile*/
+@media screen and (max-width: 700px) {
+    .main-section2 {
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+        background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
+        padding: 2em 1em;
+        background-position: right top;
+    }
+    .main-section2 h2 {
+        width: 100%;
+    }
+}
