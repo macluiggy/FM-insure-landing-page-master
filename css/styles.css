@@ -52,12 +52,21 @@ nav ul {
 nav li {
     list-style-type: none;
     padding: 0 1em 0 1em;
+    cursor: pointer;
+}
+nav li:hover {
+    color: var(--Dark-Grayish-Violet);
 }
 nav li.bordered {
     border: solid var(--Dark-Grayish-Violet);
     padding: 0.5em 1.5em;
     text-transform: uppercase;
     color: var(--Dark-Grayish-Violet);
+}
+nav li.bordered:hover {
+    background-color: var(--Very-Dark-Violet);
+    border: solid var(--Very-Dark-Violet);
+    color: white;
 }
 header section {
     background-color: var(--Very-Dark-Violet);
@@ -86,7 +95,7 @@ header section h1 {
     font-weight: lighter;
     width: 80%;
 }
-header section button {
+.view-plans {
     border: solid;
     background-color: transparent;
     color: var(--Very-Light-Gray);
@@ -94,6 +103,10 @@ header section button {
     text-transform: uppercase;
     font-weight: bold;
     margin: 2.5em 0 0 0;
+    cursor: pointer;
+}
+.view-plans:hover {
+    color: white;
 }
 header section p {
     padding: 1em 0 0 0;
@@ -351,6 +364,12 @@ main .list-main-section1 {
     font-weight: bold;
     margin-top: 2em;
 }
+.main-section2 button:hover {
+    border: solid white;
+    color: var(--Very-Dark-Violet);
+    background-color: white;
+    cursor: pointer;
+}
 /*main section 2 mobile*/
 @media screen and (max-width: 700px) {
     .main-section2 {
@@ -377,19 +396,25 @@ FOOTER SECTION
 ---------------*/
 footer {
     margin: 0 auto;
-    width: 80%;
     padding: 0 0 2em 0;
+    background-color: rgba(128, 128, 128, 0.061);
+    background-image: url('../images/bg-pattern-footer-desktop.svg');
+    background-position: left top;
+    background-repeat: no-repeat;
 }
 .footer-logos {
     display: flex;
     justify-content: space-between;
     padding: 02em 0;
+    width: 80%;
+    margin: 0 auto;
 }
 .about {
     display: flex;
     justify-content: space-between;
-    width: 85%;
+    width: 75%;
     text-transform: uppercase;
+    margin: 0 auto;
 }
 .about ul {
     font-size: 0.9em;
@@ -406,37 +431,63 @@ footer {
     color: var(--Very-Dark-Violet);
     font-weight: bold;
 }
+.about li:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
 .social-media {
-    width: 15%;
+    width: 9em;
     display: flex;
     justify-content:space-between;
 }
 .social-media img {
     width: 15%;
+    cursor: pointer;
 }
+.social-media img:hover {
+    fill: #000;
+    filter:  brightness(0);
+}
+
 /*footer mobile*/
 @media screen and (max-width: 700px) {
     footer {
         text-align: center;
+        background-image: url('../images/bg-pattern-footer-mobile.svg');
+        background-size: 100%;
     }
     .footer-logos {
         display: flex;
-        justify-content: center;
         padding: 02em 0;
         flex-direction: column;
     }
+    .insure-logo {
+        padding-bottom: 1.5em;
+    }
     .social-media {
         display: flex;
-        width: 80%;
+        width: 9em;
         margin: 0 auto;
-        border: solid;
     }
     .insure-logo {
-        border: solid;
-        width: 70%;
+        width: 8em;
         margin: 0 auto;
     }
     .insure-logo img {
         width: 100%;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-transform: uppercase;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .about ul {
+        position: relative;
+        right: 1em;
+        font-size: 1.1em;
     }
 }
