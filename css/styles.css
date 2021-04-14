@@ -376,7 +376,67 @@ main .list-main-section1 {
 FOOTER SECTION
 ---------------*/
 footer {
-    border: solid;
-    position: absolute;
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 0 2em 0;
+}
+.footer-logos {
+    display: flex;
+    justify-content: space-between;
+    padding: 02em 0;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    text-transform: uppercase;
+}
+.about ul {
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+}
+.about h4 {
+    padding: 2.5em 0 1.5em 0;
+    color: var(--Dark-Grayish-Violet);
+}
+.about li {
+    line-height: 2em;
+    list-style-type: none;
+    color: var(--Very-Dark-Violet);
+    font-weight: bold;
+}
+.social-media {
+    width: 15%;
+    display: flex;
+    justify-content:space-between;
+}
+.social-media img {
+    width: 15%;
+}
+/*footer mobile*/
+@media screen and (max-width: 700px) {
+    footer {
+        text-align: center;
+    }
+    .footer-logos {
+        display: flex;
+        justify-content: center;
+        padding: 02em 0;
+        flex-direction: column;
+    }
+    .social-media {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        border: solid;
+    }
+    .insure-logo {
+        border: solid;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .insure-logo img {
+        width: 100%;
+    }
 }
